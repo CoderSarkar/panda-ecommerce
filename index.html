@@ -6,6 +6,8 @@
     <title>panda-ecommerce</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="modify.css">
+    
 
 </head>
 
@@ -13,7 +15,7 @@
 
     <header class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
 
@@ -26,15 +28,15 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Backpack</a>
-                  <a class="nav-link" href="#">Shoes</a>
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
+                  <a class="nav-link" href="#backpack">Backpack</a>
+                  <a class="nav-link" href="#shoes">Shoes</a>
+                  <a class="nav-link" href="#subscribe">Subscribe</a>
                 </div>
               </div>
             </div>
           </nav>
 
-          <section>
+          <section class="carousel-slide">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -118,7 +120,7 @@
 
         <section class="container overflow-hidden mt-5">
 
-                <div class="row gx-5">
+                <div class="row g-5">
 
                 <div class="col">
                 <div class="p-3 rounded bg-warning d-flex align-items-center justify-content-around">
@@ -150,11 +152,12 @@
 
         </section>
 
-        <section class="mt-5">
+        <section id="shoes" class="mt-5 ">
 
             <h1>Shoes</h1>
 
             <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
                 <div class="col">
                   <div class="card h-100 shadow-lg">
                     <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
@@ -163,7 +166,8 @@
                       <h5>$444</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
-                    <div class="card-footer">
+
+                    <div class="card-footer panda-card-footer">
                       <button class="btn btn-danger">Buy Now >></button>
                     </div>
                   </div>
@@ -176,11 +180,12 @@
                       <h5>$999</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer panda-card-footer">
                         <button class="btn btn-danger">Buy Now >></button>
                     </div>
                   </div>
                 </div>
+
                 <div class="col">
                   <div class="card h-100 shadow-lg">
                     <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
@@ -189,7 +194,7 @@
                       <h5>$450</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer panda-card-footer">
                         <button class="btn btn-danger">Buy Now >></button>
                     </div>
                   </div>
@@ -198,7 +203,7 @@
 
         </section>
 
-        <section class="mt-5">
+        <section id="backpack" class="mt-5">
 
             <h1>Backpack</h1>
 
@@ -211,7 +216,7 @@
                       <h5>$300</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer panda-card-footer">
                       <button class="btn btn-danger">Buy Now >></button>
                     </div>
                   </div>
@@ -224,7 +229,7 @@
                       <h5>$350</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer panda-card-footer">
                         <button class="btn btn-danger">Buy Now >></button>
                     </div>
                   </div>
@@ -237,7 +242,7 @@
                       <h5>$180</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer panda-card-footer">
                         <button class="btn btn-danger">Buy Now >></button>
                     </div>
                   </div>
@@ -246,7 +251,7 @@
 
         </section> 
 
-        <section style="height: 300px;" class="mt-5 bg-info  d-flex justify-content-center align-items-center">
+        <section id="subscribe" style="height: 300px;" class="mt-5 bg-info  d-flex justify-content-center align-items-center">
             <div>
 
                 <h1>LET'S STAY IN TOUCH</h1>
@@ -257,6 +262,12 @@
             </div>
 
         </section>
+
+        <footer class="mt-5 d-flex align-items-center justify-content-center">
+
+          <small>©2020. Panda Commerce. All rights reserved. Abdul Kuddus Sarkar, Bangladesh.</small>
+
+        </footer>
 
     </main>
 
